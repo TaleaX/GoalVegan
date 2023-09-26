@@ -1,23 +1,21 @@
-const headerTemplate = document.createElement('template');
-headerTemplate.innerHTML = `
+const footerTemplate = document.createElement('template');
+footerTemplate.innerHTML = `
 <style>
     footer {
         background-color: rgba(100, 100, 100, 0.5);
         /* background-color: #a3a3a3; */
         color: #616161;
-        /* flex-wrap: wrap; */
     }
     
     .footer-row {
         padding: 2% 0% 2% 0%;
         display: flex;
         align-items: center;
-        /* justify-content: center; */
     }
     
     .footer-copyright {
         text-align: center;
-        font-size: 12px;
+        font-size: 14px;
         flex: 0 0 33%;
     }
     
@@ -81,7 +79,7 @@ class Footer extends HTMLElement {
     }
     connectedCallback() {
         const shadowRoot = this.attachShadow({mode: 'closed'});
-        shadowRoot.appendChild(headerTemplate.content);
+        shadowRoot.appendChild(footerTemplate.content);
     }
 }
 

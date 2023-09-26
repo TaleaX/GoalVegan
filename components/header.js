@@ -5,7 +5,7 @@ headerTemplate.innerHTML = `
             display: flex;
             justify-content: center;
             font-size: 20px;
-            padding: 0.5%;
+            padding: 0.8%;
             /* background-color: #aaaaaa; */
             background-color: rgba(100, 100, 100, 0.5);
         }
@@ -39,7 +39,7 @@ class Header extends HTMLElement {
       super();
     }
     connectedCallback() {
-        const shadowRoot = this.attachShadow({mode: 'open'});
+        const shadowRoot = this.attachShadow({mode: 'closed'});
         shadowRoot.appendChild(headerTemplate.content);
         const currentPath = window.location.pathname;
         const filename = currentPath.substring(currentPath.lastIndexOf('/') + 1);
