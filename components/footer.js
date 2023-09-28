@@ -3,6 +3,12 @@ footerTemplate.innerHTML = `
 <style>
     footer {
         background-color: rgba(100, 100, 100, 0.5);
+        /*background-color: rgba(247, 209, 223, 0.8);
+        
+        */
+        /* background-color: rgba(242, 247, 209, 0.8);
+        background-color: rgba(247, 233, 209, 0.8);
+        background-color: rgba(247, 214, 209, 0.8); */
         /* background-color: #a3a3a3; */
         color: #616161;
     }

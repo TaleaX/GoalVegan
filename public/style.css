@@ -6,7 +6,8 @@
 html {
     margin: 0;
     padding: 0;
-    color: rgb(61, 61, 61);
+    /* color: rgb(61, 61, 61); */
+    color: rgb(48, 48, 48);
     font-family: Rockwell, sans-serif;
     font-size: 18px;
 }
@@ -63,38 +64,6 @@ body {
 
 /**Footer**/
 
-footer {
-    background-color: rgba(100, 100, 100, 0.5);
-    /* background-color: #a3a3a3; */
-    color: #616161;
-    /* flex-wrap: wrap; */
-}
-
-.footer-row {
-    padding: 2% 0% 2% 0%;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-}
-
-.footer-copyright {
-    text-align: center;
-    font-size: 12px;
-    flex: 0 0 33%;
-}
-
-.footer-social-media {
-    flex: 0 0 33%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.footer-links {
-    flex: 0 0 33%;
-    display: flex;
-    justify-content: space-evenly;
-    
-}
 
 .footer-link-elem {
     text-decoration: none;
@@ -108,9 +77,47 @@ footer {
     height: 94%;
 }
 
+.banner-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.btn-elem-tryout {
+    padding: 1% 1.5% 1% 1.5%;
+    background-color: rgba(233, 209, 247, 1);
+    border-radius: 15px;
+    box-shadow: 2px 3px 6px rgb(80, 80, 80);
+    /* font-size: 18px; */
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+
+.banner {
+    /* border: 2px solid black; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(100, 100, 100, 0.6);
+    /*background-color: rgba(247, 209, 223, 0.8);
+    background-color: rgba(247, 214, 209, 0.8);
+    background-color: rgba(247, 233, 209, 0.8);
+    /* background-color: rgba(242, 247, 209, 0.8); */
+   flex-direction: column;
+    border-radius: 1%;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+}
+
 #bg-img-slider {
     background-image: url("../assets/start.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }

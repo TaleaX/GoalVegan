@@ -1,8 +1,8 @@
 
 let imgs = {
     1: "../assets/start.jpg",
-    2: "../assets/bowl.jpg",
-    3: "../assets/wrap.jpg"
+    2: "../assets/oat-nutprotein-coffee.jpeg",
+    3: "../assets/oat-cocoa-banana.jpeg"
 }
 
 function currentSlide(element, n) {
@@ -22,6 +22,6 @@ function currentPage(element) {
     let length = activeNavs.length;
     for (let i = 0; i < length; ++i) {
         activeNavs[i].classList.remove("active");
-    } 
+    }
     element.classList.add("active");
 }
